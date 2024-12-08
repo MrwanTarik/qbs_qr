@@ -231,32 +231,7 @@ function NavItem(props: HeaderLinkProps) {
 function DesktopNavigation(
   props: HeaderProps & React.ComponentPropsWithoutRef<"nav">,
 ) {
-  return (
-    <div
-      className={clsx(
-        "fixed top-0 z-20 w-full bg-background hidden md:flex break-words",
-        props.className,
-      )}
-    >
-      <Container>
-        <div className="h-14 flex items-center justify-between">
-          <Logo />
-          <div className="flex items-center">
-            <nav>
-              <ul className="flex text-sm _font-medium text-zinc-800 dark:text-zinc-200 items-center">
-                {props.links.map((item, index) => (
-                  <NavItem key={index} {...item}></NavItem>
-                ))}
-              </ul>
-            </nav>
-            <div className="w-3"></div>
-            <UserButton />
-          </div>
-          <BorderBottom />
-        </div>
-      </Container>
-    </div>
-  );
+  return <></>;
 }
 
 export function Header() {
